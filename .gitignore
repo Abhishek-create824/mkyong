@@ -1,3 +1,6 @@
+#git rm --cached .classpath
+#git rm -r --cached .settings
+
 #GIT
 #.gitignore
 

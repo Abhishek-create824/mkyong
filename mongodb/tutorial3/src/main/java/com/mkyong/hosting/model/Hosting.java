@@ -16,7 +16,7 @@ public class Hosting {
 	}
 
 	public Hosting(long id) {
-		super();
+		this();
 		setId(id);
 	}
 

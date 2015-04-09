@@ -16,8 +16,7 @@ public class SequenceId {
 	}
 
 	public SequenceId(String id) {
-		super();
-
+		this();
 		setId(id);
 	}
 

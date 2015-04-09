@@ -1,4 +1,4 @@
-package com.mkyong.seq.exception;
+package com.mkyong.exception;
 
 public class SequenceException extends RuntimeException {
 

@@ -1,12 +1,12 @@
-package com.mkyong.hosting.bo;
+package com.mkyong.bo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mkyong.hosting.dao.HostingDao;
-import com.mkyong.hosting.model.Hosting;
-import com.mkyong.seq.dao.SequenceDao;
-import com.mkyong.seq.exception.SequenceException;
+import com.mkyong.dao.HostingDao;
+import com.mkyong.dao.SequenceDao;
+import com.mkyong.exception.SequenceException;
+import com.mkyong.model.Hosting;
 
 @Service
 public class HostingBoImpl implements HostingBo {

@@ -1,4 +1,4 @@
-package com.mkyong.seq.dao;
+package com.mkyong.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.FindAndModifyOptions;
@@ -8,8 +8,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
 
-import com.mkyong.seq.exception.SequenceException;
-import com.mkyong.seq.model.SequenceId;
+import com.mkyong.exception.SequenceException;
+import com.mkyong.model.SequenceId;
 
 @Repository
 public class SequenceDaoImpl implements SequenceDao {

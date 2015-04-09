@@ -1,4 +1,4 @@
-package com.mkyong.user;
+package com.mkyong.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

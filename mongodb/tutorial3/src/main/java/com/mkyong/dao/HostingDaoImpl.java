@@ -1,10 +1,10 @@
-package com.mkyong.hosting.dao;
+package com.mkyong.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.stereotype.Service;
 
-import com.mkyong.hosting.model.Hosting;
+import com.mkyong.model.Hosting;
 
 @Service
 public class HostingDaoImpl implements HostingDao {

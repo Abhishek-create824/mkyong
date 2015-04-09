@@ -1,6 +1,6 @@
-package com.mkyong.seq.dao;
+package com.mkyong.dao;
 
-import com.mkyong.seq.exception.SequenceException;
+import com.mkyong.exception.SequenceException;
 
 public interface SequenceDao {
 

@@ -1,6 +1,6 @@
-package com.mkyong.hosting.bo;
+package com.mkyong.bo;
 
-import com.mkyong.seq.exception.SequenceException;
+import com.mkyong.exception.SequenceException;
 
 public interface HostingBo {
 

@@ -1,4 +1,4 @@
-package com.mkyong.seq.model;
+package com.mkyong.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

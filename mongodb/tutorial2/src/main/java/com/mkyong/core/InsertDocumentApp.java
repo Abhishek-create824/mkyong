@@ -1,6 +1,5 @@
 package com.mkyong.core;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,9 +10,9 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoCredential;
+//import com.mongodb.MongoCredential;
 import com.mongodb.MongoException;
-import com.mongodb.ServerAddress;
+//import com.mongodb.ServerAddress;
 import com.mongodb.util.JSON;
 
 public class InsertDocumentApp {
@@ -21,21 +20,23 @@ public class InsertDocumentApp {
 		final String HOST = "192.168.1.50";
 		final int PORT = 27017;
 
-		final String USERNAME = "mkyong";
-		final String PASSWORD = "12345";
+		// final String USERNAME = "mkyong";
+		// final String PASSWORD = "12345";
 		final String DATABASE = "mkyong";
 
 		final String COLLECTION = "dummyColl";
 
-		MongoClient client = null;
+		MongoClient mongo = null;
 
-		MongoCredential credential = MongoCredential.createCredential(USERNAME,
-				DATABASE, PASSWORD.toCharArray());
+		// MongoCredential credential =
+		// MongoCredential.createCredential(USERNAME,
+		// DATABASE, PASSWORD.toCharArray());
 
 		try {
-			client = new MongoClient(new ServerAddress(HOST, PORT),
-					Arrays.asList(credential));
-			DB db = client.getDB(DATABASE);
+			// mongo = new MongoClient(new ServerAddress(HOST, PORT),
+			// Arrays.asList(credential));
+			mongo = new MongoClient(HOST, PORT);
+			DB db = mongo.getDB(DATABASE);
 
 			DBCollection collection = db.getCollection(COLLECTION);
 
@@ -119,8 +120,8 @@ public class InsertDocumentApp {
 		} catch (MongoException e) {
 			e.printStackTrace();
 		} finally {
-			if (client != null)
-				client.close();
+			if (mongo != null)
+				mongo.close();
 		}
 
 	}

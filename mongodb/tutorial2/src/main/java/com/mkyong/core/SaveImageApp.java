@@ -1,17 +1,13 @@
 package com.mkyong.core;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.Calendar;
 
 import com.mongodb.DB;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoCredential;
 import com.mongodb.MongoException;
-import com.mongodb.ServerAddress;
 import com.mongodb.gridfs.GridFS;
 import com.mongodb.gridfs.GridFSDBFile;
 import com.mongodb.gridfs.GridFSInputFile;
@@ -33,19 +29,21 @@ public class SaveImageApp {
 		final String HOST = "192.168.1.50";
 		final int PORT = 27017;
 
-		final String USERNAME = "cams7";
-		final String PASSWORD = "12345";
+		// final String USERNAME = "cams7";
+		// final String PASSWORD = "12345";
 		final String DATABASE = "imagedb";
 
-		MongoClient client = null;
-		MongoCredential credential = MongoCredential.createCredential(USERNAME,
-				DATABASE, PASSWORD.toCharArray());
+		MongoClient mongo = null;
+		// MongoCredential credential =
+		// MongoCredential.createCredential(USERNAME,
+		// DATABASE, PASSWORD.toCharArray());
 
 		try {
-			client = new MongoClient(new ServerAddress(HOST, PORT),
-					Arrays.asList(credential));
+			// mongo = new MongoClient(new ServerAddress(HOST, PORT),
+			// Arrays.asList(credential));
+			mongo = new MongoClient(HOST, PORT);
+			DB db = mongo.getDB(DATABASE);
 
-			DB db = client.getDB(DATABASE);
 			System.out.println("Database name: " + db.getName());
 
 			// Mongo mongo = db.getMongo();
@@ -88,11 +86,13 @@ public class SaveImageApp {
 
 			System.out.println("Done");
 
-		} catch (MongoException | IOException e) {
+		} catch (MongoException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-			if (client != null)
-				client.close();
+			if (mongo != null)
+				mongo.close();
 		}
 
 	}

@@ -20,8 +20,10 @@ public class User {
 	private String ic;
 
 	private String name;
-
 	private Integer age;
+
+	private String username;
+	private String password;
 
 	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private Date createdDate;
@@ -33,6 +35,13 @@ public class User {
 	public User(String id) {
 		this();
 		this.id = id;
+	}
+
+	public User(String username, String password) {
+		this();
+
+		setUsername(username);
+		setPassword(password);
 	}
 
 	public User(String ic, String name, Integer age) {
@@ -65,6 +74,10 @@ public class User {
 				+ getName()
 				+ ", age = "
 				+ getAge()
+				+ ", username = "
+				+ getUsername()
+				+ ", password = "
+				+ getPassword()
 				+ ", createdDate = "
 				+ (getCreatedDate() != null ? df.format(getCreatedDate())
 						: null) + "]";
@@ -100,6 +113,22 @@ public class User {
 
 	public void setAge(Integer age) {
 		this.age = age;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public Date getCreatedDate() {

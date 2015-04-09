@@ -21,7 +21,7 @@ public class User {
 
 	private String name;
 
-	private int age;
+	private Integer age;
 
 	@DateTimeFormat(iso = ISO.DATE_TIME)
 	private Date createdDate;
@@ -35,7 +35,15 @@ public class User {
 		this.id = id;
 	}
 
-	public User(String ic, String name, int age, Date createdDate) {
+	public User(String ic, String name, Integer age) {
+		this();
+
+		setIc(ic);
+		setName(name);
+		setAge(age);
+	}
+
+	public User(String ic, String name, Integer age, Date createdDate) {
 		this();
 
 		setIc(ic);
@@ -86,11 +94,11 @@ public class User {
 		this.name = name;
 	}
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 

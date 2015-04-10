@@ -34,7 +34,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.mkyong.common.App</mainClass>
+							<mainClass>com.mkyong.core.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

@@ -46,7 +46,12 @@ public class App {
 		System.out.println("properties:");
 		for (Entry<Object, Object> entry : customer.getPros().entrySet())
 			System.out.println(entry.getKey() + " = " + entry.getValue());
-		System.out.println();
+
+		System.out.println("list values: ");
+		for (Object o : customer.getGenericList())
+			System.out.print(o + " ");
+
+		System.out.println("\n");
 
 		FileNameGenerator fileNameGenerator = (FileNameGenerator) context
 				.getBean("FileNameGenerator");

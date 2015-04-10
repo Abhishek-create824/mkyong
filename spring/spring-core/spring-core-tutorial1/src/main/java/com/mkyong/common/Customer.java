@@ -17,6 +17,8 @@ public class Customer {
 	private Map<String, Person> maps;
 	private Properties pros;
 
+	private List<?> genericList;
+
 	public Customer() {
 		super();
 	}
@@ -102,6 +104,14 @@ public class Customer {
 
 	public void setPros(Properties pros) {
 		this.pros = pros;
+	}
+
+	public List<?> getGenericList() {
+		return genericList;
+	}
+
+	public void setGenericList(List<?> genericList) {
+		this.genericList = genericList;
 	}
 
 }

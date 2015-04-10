@@ -22,8 +22,12 @@
 	<bean id="CsvOutputGenerator" class="com.mkyong.output.CsvOutputGenerator" />
 	<bean id="JsonOutputGenerator" class="com.mkyong.output.JsonOutputGenerator" />
 
+	<!-- context:annotation-config / -->
+
 	<bean id="BaseCustomerMalaysia" class="com.mkyong.common.Customer">
 		<property name="country" value="Malaysia" />
+
+		<property name="person" ref="PersonBean" />
 	</bean>
 
 	<bean id="CustomerBean" parent="BaseCustomerMalaysia">
@@ -38,8 +42,6 @@
 		<constructor-arg type="int">
 			<value>28</value>
 		</constructor-arg>
-
-		<property name="person" ref="PersonBean" />
 
 		<!-- java.util.List -->
 		<property name="lists">

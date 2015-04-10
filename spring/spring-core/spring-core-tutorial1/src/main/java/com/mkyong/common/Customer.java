@@ -8,6 +8,8 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Customer {
 	private String name;
 	private String address;
@@ -119,6 +121,7 @@ public class Customer {
 		return person;
 	}
 
+	@Required
 	public void setPerson(Person person) {
 		this.person = person;
 	}

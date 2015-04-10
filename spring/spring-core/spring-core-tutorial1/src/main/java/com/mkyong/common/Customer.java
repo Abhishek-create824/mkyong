@@ -19,6 +19,7 @@ public class Customer {
 
 	private List<?> genericList;
 	private Set<?> genericSet;
+	private Map<?, ?> genericMap;
 
 	public Customer() {
 		super();
@@ -121,6 +122,14 @@ public class Customer {
 
 	public void setGenericSet(Set<?> genericSet) {
 		this.genericSet = genericSet;
+	}
+
+	public Map<?, ?> getGenericMap() {
+		return genericMap;
+	}
+
+	public void setGenericMap(Map<?, ?> genericMap) {
+		this.genericMap = genericMap;
 	}
 
 }

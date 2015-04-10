@@ -55,6 +55,10 @@ public class App {
 		for (Object o : customer.getGenericSet())
 			System.out.print(o + " ");
 
+		System.out.println("\nmap values: ");
+		for (Entry<?, ?> entry : customer.getGenericMap().entrySet())
+			System.out.print(entry.getKey() + " = " + entry.getValue() + " ");
+
 		System.out.println("\n");
 
 		FileNameGenerator fileNameGenerator = (FileNameGenerator) context

@@ -101,6 +101,14 @@
 				<value>6</value>
 			</util:set>
 		</property>
+		
+		<property name="genericMap">
+			<util:map map-class="java.util.HashMap">
+				<entry key="Key1" value="7" />
+				<entry key="Key2" value="8" />
+				<entry key="Key3" value="9" />
+			</util:map>
+		</property>
 	</bean>
 
 	<bean id="PersonBean" class="com.mkyong.common.Person">

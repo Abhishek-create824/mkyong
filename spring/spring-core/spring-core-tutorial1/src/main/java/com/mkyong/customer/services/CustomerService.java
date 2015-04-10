@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 //singleton – Return a single bean instance per Spring IoC container
 //prototype – Return a new bean instance each time when requested
 //request – Return a single bean instance per HTTP request. *
@@ -32,7 +35,8 @@ public class CustomerService implements InitializingBean, DisposableBean {
 	 */
 	@Override
 	public void destroy() throws Exception {
-		System.out.println("Spring Container is destroy! Customer clean up");
+		System.out
+				.println("destroy(): Spring Container is destroy! CustomerService clean up");
 	}
 
 	/*
@@ -43,7 +47,21 @@ public class CustomerService implements InitializingBean, DisposableBean {
 	 */
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("Init method after properties are set : "
-				+ getMessage());
+		System.out
+				.println("afterPropertiesSet(): Init method after properties are set message: "
+						+ getMessage());
+	}
+
+	@PostConstruct
+	public void initIt() throws Exception {
+		System.out
+				.println("initIt(): Init method after properties are set message: "
+						+ getMessage());
+	}
+
+	@PreDestroy
+	public void cleanUp() throws Exception {
+		System.out
+				.println("cleanUp(): Spring Container is destroy! CustomerService clean up");
 	}
 }

@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.mkyong.common.Customer;
 import com.mkyong.config.AppConfig;
 import com.mkyong.output.OutputHelper;
 
@@ -20,6 +21,9 @@ public class App {
 		OutputHelper output = (OutputHelper) context.getBean("OutputHelper");
 		output.generateOutput();
 
+		Customer customer = (Customer) context.getBean("CustomerBean");
+		System.out.println(customer);
+
 		// ---------------------------------//------------------------------------
 
 		context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -28,10 +32,10 @@ public class App {
 
 		hello2.printHelloWorld("Spring3 Java Config");
 
-		CustomerBo customer = (CustomerBo) context.getBean("customer");
-		customer.printMsg("Hello 1");
+		CustomerBo customerBo = (CustomerBo) context.getBean("customer");
+		customerBo.printMsg("Hello 1");
 
-		SchedulerBo scheduler = (SchedulerBo) context.getBean("scheduler");
-		scheduler.printMsg("Hello 2");
+		SchedulerBo schedulerBo = (SchedulerBo) context.getBean("scheduler");
+		schedulerBo.printMsg("Hello 2");
 	}
 }

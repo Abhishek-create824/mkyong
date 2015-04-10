@@ -78,6 +78,9 @@ public class Customer {
 	@Value("#{2 ^ 2}")
 	private double testExponentialPower;// 4.0
 
+	@Value("#{itemBean.qty < 100 ? true : false}")
+	private boolean warning;
+
 	public Customer() {
 		super();
 	}
@@ -88,20 +91,21 @@ public class Customer {
 				+ ", amount = " + getAmount() + ", item = " + getItem()
 				+ ", itemName = " + getItemName() + ", address = "
 				+ getAddress() + ", country = " + getCountry()
-				+ ", fullAddress = " + getFullAddress() + ", testEqual="
-				+ isTestEqual() + ", testNotEqual=" + isTestNotEqual()
-				+ ", testLessThan=" + isTestLessThan()
-				+ ", testLessThanOrEqual=" + isTestLessThanOrEqual()
-				+ ", testGreaterThan=" + isTestGreaterThan()
-				+ ", testGreaterThanOrEqual=" + isTestGreaterThanOrEqual()
-				+ ", testAnd=" + isTestAnd() + ", testOr=" + isTestOr()
-				+ ", testNot=" + isTestNot() + ", testAdd=" + getTestAdd()
-				+ ", testAddString=" + getTestAddString()
-				+ ", testSubtraction=" + getTestSubtraction()
-				+ ", testMultiplication=" + getTestMultiplication()
-				+ ", testDivision=" + getTestDivision() + ", testModulus="
-				+ getTestModulus() + ", testExponentialPower="
-				+ getTestExponentialPower() + "]";
+				+ ", fullAddress = " + getFullAddress() + ", testEqual = "
+				+ isTestEqual() + ", testNotEqual = " + isTestNotEqual()
+				+ ", testLessThan = " + isTestLessThan()
+				+ ", testLessThanOrEqual = " + isTestLessThanOrEqual()
+				+ ", testGreaterThan = " + isTestGreaterThan()
+				+ ", testGreaterThanOrEqual = " + isTestGreaterThanOrEqual()
+				+ ", testAnd = " + isTestAnd() + ", testOr = " + isTestOr()
+				+ ", testNot = " + isTestNot() + ", testAdd = " + getTestAdd()
+				+ ", testAddString = " + getTestAddString()
+				+ ", testSubtraction = " + getTestSubtraction()
+				+ ", testMultiplication = " + getTestMultiplication()
+				+ ", testDivision = " + getTestDivision() + ", testModulus = "
+				+ getTestModulus() + ", testExponentialPower = "
+				+ getTestExponentialPower() + ", warning = " + isWarning()
+				+ "]";
 	}
 
 	public Item getItem() {
@@ -286,6 +290,14 @@ public class Customer {
 
 	public void setTestExponentialPower(double testExponentialPower) {
 		this.testExponentialPower = testExponentialPower;
+	}
+
+	public boolean isWarning() {
+		return warning;
+	}
+
+	public void setWarning(boolean warning) {
+		this.warning = warning;
 	}
 
 }

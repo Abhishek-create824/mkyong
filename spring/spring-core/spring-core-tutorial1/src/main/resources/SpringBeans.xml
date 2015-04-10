@@ -7,4 +7,11 @@
 	<bean id="helloBean" class="com.mkyong.core.HelloWorld">
 		<property name="name" value="Mkyong" />
 	</bean>
+
+	<bean id="OutputHelper" class="com.mkyong.output.OutputHelper">
+		<property name="outputGenerator" ref="CsvOutputGenerator" />
+	</bean>
+
+	<bean id="CsvOutputGenerator" class="com.mkyong.output.CsvOutputGenerator" />
+	<bean id="JsonOutputGenerator" class="com.mkyong.output.JsonOutputGenerator" />
 </beans>

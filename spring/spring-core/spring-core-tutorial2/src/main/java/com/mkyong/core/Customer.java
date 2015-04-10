@@ -81,6 +81,12 @@ public class Customer {
 	@Value("#{itemBean.qty < 100 ? true : false}")
 	private boolean warning;
 
+	@Value("#{testBean.map['MapA']}")
+	private String mapA;
+
+	@Value("#{testBean.list[0]}")
+	private String list;
+
 	public Customer() {
 		super();
 	}
@@ -105,7 +111,7 @@ public class Customer {
 				+ ", testDivision = " + getTestDivision() + ", testModulus = "
 				+ getTestModulus() + ", testExponentialPower = "
 				+ getTestExponentialPower() + ", warning = " + isWarning()
-				+ "]";
+				+ ", mapA = " + getMapA() + ", list = " + getList() + "]";
 	}
 
 	public Item getItem() {
@@ -298,6 +304,22 @@ public class Customer {
 
 	public void setWarning(boolean warning) {
 		this.warning = warning;
+	}
+
+	public String getMapA() {
+		return mapA;
+	}
+
+	public void setMapA(String mapA) {
+		this.mapA = mapA;
+	}
+
+	public String getList() {
+		return list;
+	}
+
+	public void setList(String list) {
+		this.list = list;
 	}
 
 }

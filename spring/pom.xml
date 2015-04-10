@@ -9,23 +9,28 @@
 	</parent>
 
 	<groupId>br.com.cams7.teste.mykong</groupId>
-	<artifactId>mongodb</artifactId>
+	<artifactId>spring</artifactId>
 	
 	<packaging>pom</packaging>
 	
-	<name>Mongo DB Tutorial</name>
-	<description>Exemplos de Mongo DB: http://www.mkyong.com/tutorials/java-mongodb-tutorials/</description>
+	<name>Spring Tutorial</name>
+	<description>Exemplos de Spring</description>
 	
 	<modules>
-		<module>mongodb-tutorial2</module>	
-		<module>mongodb-tutorial3</module>	
+		<module>spring-core</module>		
 	</modules>
 	
-	<dependencies>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>3.0.0</version>
-		</dependency>		
+	<dependencyManagement>
+		<dependencies>			
+			<!-- Spring Context -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>			
 	</dependencies>	
 </project>

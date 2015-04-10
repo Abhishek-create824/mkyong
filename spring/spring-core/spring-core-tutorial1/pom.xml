@@ -3,42 +3,42 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>br.com.cams7.teste.mykong</groupId>
-		<artifactId>mongodb</artifactId>
+		<groupId>br.com.cams7.teste.mykong.spring</groupId>
+		<artifactId>spring-core</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	
-	
-	<groupId>br.com.cams7.teste.mykong.mongodb</groupId>
-	<artifactId>tutorial2</artifactId>
+
+	<artifactId>spring-core-tutorial1</artifactId>
 	<packaging>jar</packaging>
 
-	<name>2. Java MongoDB Examples</name>
+	<name>Spring Quick Start</name>
 	<description></description>
 
+	<properties>
+	</properties>
+
 	<dependencies>
+		<!-- Spring Context -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
 		</dependency>
 	</dependencies>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
-		<plugins>			
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.mkyong.core.App</mainClass>
-						</manifest>						
+							<mainClass>com.mkyong.common.App</mainClass>
+						</manifest>
 					</archive>
 				</configuration>
-			</plugin>			
+			</plugin>
 		</plugins>
 	</build>
 </project>

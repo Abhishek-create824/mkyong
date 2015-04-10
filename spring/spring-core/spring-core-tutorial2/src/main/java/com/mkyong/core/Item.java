@@ -18,6 +18,13 @@ public class Item {
 		super();
 	}
 
+	public Item(String name, int qty) {
+		this();
+
+		this.name = name;
+		this.qty = qty;
+	}
+
 	@Override
 	public String toString() {
 		return this.getClass().getName() + " [name = " + getName() + ", qty = "

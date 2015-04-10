@@ -5,6 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.mkyong.common.Customer;
+import com.mkyong.common.FileNameGenerator;
 import com.mkyong.config.AppConfig;
 import com.mkyong.output.OutputHelper;
 
@@ -23,6 +24,10 @@ public class App {
 
 		Customer customer = (Customer) context.getBean("CustomerBean");
 		System.out.println(customer);
+
+		FileNameGenerator fileNameGenerator = (FileNameGenerator) context
+				.getBean("FileNameGenerator");
+		System.out.println(fileNameGenerator);
 
 		// ---------------------------------//------------------------------------
 

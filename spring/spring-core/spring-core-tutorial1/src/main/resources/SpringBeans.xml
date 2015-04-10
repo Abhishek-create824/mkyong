@@ -9,7 +9,10 @@
 	</bean>
 
 	<bean id="OutputHelper" class="com.mkyong.output.OutputHelper">
-		<property name="outputGenerator" ref="CsvOutputGenerator" />
+		<!-- property name="outputGenerator" ref="CsvOutputGenerator" / -->
+		<constructor-arg>
+			<ref bean="JsonOutputGenerator" />
+		</constructor-arg>
 	</bean>
 
 	<bean id="CsvOutputGenerator" class="com.mkyong.output.CsvOutputGenerator" />

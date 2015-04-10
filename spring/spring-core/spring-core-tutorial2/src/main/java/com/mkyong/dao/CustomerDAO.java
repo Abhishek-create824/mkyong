@@ -1,10 +1,9 @@
-package com.mkyong.customer.dao;
+package com.mkyong.dao;
 
 import org.springframework.stereotype.Repository;
 
-//@Component
 @Repository
-public class CustomerDAO {
+public class CustomerDAO implements DAO {
 	@Override
 	public String toString() {
 		return "Hello , This is CustomerDAO";

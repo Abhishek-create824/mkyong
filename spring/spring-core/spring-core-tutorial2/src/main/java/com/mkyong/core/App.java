@@ -7,7 +7,7 @@ import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 
-import com.mkyong.customer.services.CustomerService;
+import com.mkyong.services.CustomerService;
 
 public class App {
 	public static void main(String[] args) {

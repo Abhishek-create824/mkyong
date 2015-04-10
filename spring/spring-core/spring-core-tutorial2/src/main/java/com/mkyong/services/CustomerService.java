@@ -1,9 +1,10 @@
-package com.mkyong.customer.services;
+package com.mkyong.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.mkyong.customer.dao.CustomerDAO;
+import com.mkyong.dao.DAO;
 
 //@Component – Indicates a auto scan component.
 //@Repository – Indicates DAO component in the persistence layer.
@@ -12,10 +13,16 @@ import com.mkyong.customer.dao.CustomerDAO;
 @Service
 public class CustomerService {
 	@Autowired
-	private CustomerDAO customerDAO;
+	@Qualifier("customerDAO")
+	private DAO dao1;
+
+	@Autowired
+	@Qualifier("userDAO")
+	private DAO dao2;
 
 	@Override
 	public String toString() {
-		return "CustomerService [customerDAO = " + customerDAO + "]";
+		return "CustomerService [customerDAO = " + dao1 + ", userDAO = " + dao2
+				+ "]";
 	}
 }

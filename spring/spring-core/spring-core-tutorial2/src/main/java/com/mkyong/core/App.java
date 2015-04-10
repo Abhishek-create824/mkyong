@@ -54,5 +54,6 @@ public class App {
 		CustomerService cust = (CustomerService) context
 				.getBean("customerService");
 		System.out.println(cust);
+
 	}
 }

@@ -8,6 +8,7 @@ import com.mkyong.common.Customer;
 import com.mkyong.common.FileNameGenerator;
 import com.mkyong.common.Person;
 import com.mkyong.config.AppConfig;
+import com.mkyong.customer.services.CustomerService;
 import com.mkyong.output.OutputHelper;
 
 public class App {
@@ -31,6 +32,16 @@ public class App {
 		FileNameGenerator fileNameGenerator = (FileNameGenerator) context
 				.getBean("FileNameGenerator");
 		System.out.println(fileNameGenerator);
+
+		CustomerService custA = (CustomerService) context
+				.getBean("customerService");
+		custA.setMessage("Message by custA");
+		System.out.println("Message : " + custA.getMessage());
+
+		// retrieve it again
+		CustomerService custB = (CustomerService) context
+				.getBean("customerService");
+		System.out.println("Message : " + custB.getMessage());
 
 		// ---------------------------------//------------------------------------
 

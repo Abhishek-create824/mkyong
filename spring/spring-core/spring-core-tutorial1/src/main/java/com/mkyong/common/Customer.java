@@ -18,6 +18,7 @@ public class Customer {
 	private Properties pros;
 
 	private List<?> genericList;
+	private Set<?> genericSet;
 
 	public Customer() {
 		super();
@@ -112,6 +113,14 @@ public class Customer {
 
 	public void setGenericList(List<?> genericList) {
 		this.genericList = genericList;
+	}
+
+	public Set<?> getGenericSet() {
+		return genericSet;
+	}
+
+	public void setGenericSet(Set<?> genericSet) {
+		this.genericSet = genericSet;
 	}
 
 }

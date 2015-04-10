@@ -51,6 +51,10 @@ public class App {
 		for (Object o : customer.getGenericList())
 			System.out.print(o + " ");
 
+		System.out.println("\nset values: ");
+		for (Object o : customer.getGenericSet())
+			System.out.print(o + " ");
+
 		System.out.println("\n");
 
 		FileNameGenerator fileNameGenerator = (FileNameGenerator) context

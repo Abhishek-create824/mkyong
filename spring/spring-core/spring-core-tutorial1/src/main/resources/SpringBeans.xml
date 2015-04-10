@@ -93,6 +93,14 @@
 				<value>3</value>
 			</util:list>
 		</property>
+
+		<property name="genericSet">
+			<util:set set-class="java.util.HashSet">
+				<value>4</value>
+				<value>5</value>
+				<value>6</value>
+			</util:set>
+		</property>
 	</bean>
 
 	<bean id="PersonBean" class="com.mkyong.common.Person">

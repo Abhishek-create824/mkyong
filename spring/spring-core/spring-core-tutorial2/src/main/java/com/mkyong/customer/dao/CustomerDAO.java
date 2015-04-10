@@ -1,8 +1,9 @@
 package com.mkyong.customer.dao;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository
 public class CustomerDAO {
 	@Override
 	public String toString() {

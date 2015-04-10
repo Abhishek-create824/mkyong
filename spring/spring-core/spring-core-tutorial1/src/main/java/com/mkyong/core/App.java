@@ -1,5 +1,7 @@
 package com.mkyong.core;
 
+import java.util.Map.Entry;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -28,6 +30,23 @@ public class App {
 		Person person = customer.getPerson();
 		System.out.println(customer);
 		System.out.println(person);
+
+		System.out.println("\nlist values:");
+		for (Person p : customer.getLists())
+			System.out.println(p);
+
+		System.out.println("set values:");
+		for (Person p : customer.getSets())
+			System.out.println(p);
+
+		System.out.println("map values:");
+		for (Entry<String, Person> entry : customer.getMaps().entrySet())
+			System.out.println(entry.getKey() + " = " + entry.getValue());
+
+		System.out.println("properties:");
+		for (Entry<Object, Object> entry : customer.getPros().entrySet())
+			System.out.println(entry.getKey() + " = " + entry.getValue());
+		System.out.println();
 
 		FileNameGenerator fileNameGenerator = (FileNameGenerator) context
 				.getBean("FileNameGenerator");

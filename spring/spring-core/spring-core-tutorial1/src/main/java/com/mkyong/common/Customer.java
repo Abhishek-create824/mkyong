@@ -1,11 +1,21 @@
 package com.mkyong.common;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
 public class Customer {
 	private String name;
 	private String address;
 	private int age;
 
 	private Person person;
+
+	private List<Person> lists;
+	private Set<Person> sets;
+	private Map<String, Person> maps;
+	private Properties pros;
 
 	public Customer() {
 		super();
@@ -60,6 +70,38 @@ public class Customer {
 
 	public void setPerson(Person person) {
 		this.person = person;
+	}
+
+	public List<Person> getLists() {
+		return lists;
+	}
+
+	public void setLists(List<Person> lists) {
+		this.lists = lists;
+	}
+
+	public Set<Person> getSets() {
+		return sets;
+	}
+
+	public void setSets(Set<Person> sets) {
+		this.sets = sets;
+	}
+
+	public Map<String, Person> getMaps() {
+		return maps;
+	}
+
+	public void setMaps(Map<String, Person> maps) {
+		this.maps = maps;
+	}
+
+	public Properties getPros() {
+		return pros;
+	}
+
+	public void setPros(Properties pros) {
+		this.pros = pros;
 	}
 
 }

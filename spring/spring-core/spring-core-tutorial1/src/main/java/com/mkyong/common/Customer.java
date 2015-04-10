@@ -1,6 +1,9 @@
 package com.mkyong.common;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
@@ -9,6 +12,8 @@ public class Customer {
 	private String name;
 	private String address;
 	private int age;
+
+	private Date date;
 
 	private Person person;
 
@@ -39,9 +44,14 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return this.getClass().getName() + " [name : " + getName()
-				+ ", address : " + getAddress() + ", age : " + getAge()
-				+ ", person : " + getPerson() + "]";
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy z", new Locale(
+				"pt", "BR"));
+
+		return this.getClass().getName() + " [name = " + getName()
+				+ ", address = " + getAddress() + ", age = " + getAge()
+				+ ", date = "
+				+ (getDate() != null ? df.format(getDate()) : null)
+				+ ", person = " + getPerson() + "]";
 	}
 
 	public String getName() {
@@ -66,6 +76,14 @@ public class Customer {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public Person getPerson() {

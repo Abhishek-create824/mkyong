@@ -101,7 +101,7 @@
 				<value>6</value>
 			</util:set>
 		</property>
-		
+
 		<property name="genericMap">
 			<util:map map-class="java.util.HashMap">
 				<entry key="Key1" value="7" />
@@ -109,6 +109,16 @@
 				<entry key="Key3" value="9" />
 			</util:map>
 		</property>
+
+		<property name="date">
+			<bean factory-bean="dateFormat" factory-method="parse">
+				<constructor-arg value="10/04/2015" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="dateFormat" class="java.text.SimpleDateFormat">
+		<constructor-arg value="dd/MM/yyyy" />
 	</bean>
 
 	<bean id="PersonBean" class="com.mkyong.common.Person">

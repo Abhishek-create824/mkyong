@@ -64,7 +64,7 @@ public class User {
 	@Override
 	public String toString() {
 		SimpleDateFormat df = new SimpleDateFormat(
-				"yyyy-MM-dd'T'HH:mm:ss.SSSz", new Locale("pt", "BR"));
+				"dd/MM/yyyy'T'HH:mm:ss.SSSz", new Locale("pt", "BR"));
 		return this.getClass().getName()
 				+ " [id = "
 				+ getId()

@@ -22,7 +22,11 @@
 	<bean id="CsvOutputGenerator" class="com.mkyong.output.CsvOutputGenerator" />
 	<bean id="JsonOutputGenerator" class="com.mkyong.output.JsonOutputGenerator" />
 
-	<bean id="CustomerBean" class="com.mkyong.common.Customer">
+	<bean id="BaseCustomerMalaysia" class="com.mkyong.common.Customer">
+		<property name="country" value="Malaysia" />
+	</bean>
+
+	<bean id="CustomerBean" parent="BaseCustomerMalaysia">
 		<constructor-arg type="java.lang.String">
 			<value>mkyong</value>
 		</constructor-arg>
@@ -115,6 +119,10 @@
 				<constructor-arg value="10/04/2015" />
 			</bean>
 		</property>
+
+		<property name="country" value="Japan" />
+		<property name="action" value="buy" />
+		<property name="type" value="1" />
 	</bean>
 
 	<bean id="dateFormat" class="java.text.SimpleDateFormat">

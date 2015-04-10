@@ -15,6 +15,10 @@ public class Customer {
 
 	private Date date;
 
+	private int type;
+	private String action;
+	private String country;
+
 	private Person person;
 
 	private List<Person> lists;
@@ -49,7 +53,8 @@ public class Customer {
 
 		return this.getClass().getName() + " [name = " + getName()
 				+ ", address = " + getAddress() + ", age = " + getAge()
-				+ ", date = "
+				+ ", type = " + getType() + ", action = " + getAction()
+				+ ", country = " + getCountry() + ", date = "
 				+ (getDate() != null ? df.format(getDate()) : null)
 				+ ", person = " + getPerson() + "]";
 	}
@@ -84,6 +89,30 @@ public class Customer {
 
 	public void setDate(Date date) {
 		this.date = date;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
+	public String getAction() {
+		return action;
+	}
+
+	public void setAction(String action) {
+		this.action = action;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	public Person getPerson() {

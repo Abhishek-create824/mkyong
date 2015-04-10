@@ -26,6 +26,10 @@ public class App {
 		OutputHelper output = (OutputHelper) context.getBean("OutputHelper");
 		output.generateOutput();
 
+		Customer customerMalaysia = (Customer) context
+				.getBean("BaseCustomerMalaysia");
+		System.out.println(customerMalaysia);
+
 		Customer customer = (Customer) context.getBean("CustomerBean");
 		Person person = customer.getPerson();
 		System.out.println(customer);

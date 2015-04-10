@@ -87,6 +87,22 @@ public class Customer {
 	@Value("#{testBean.list[0]}")
 	private String list;
 
+	// email regular expression
+	private String emailRegEx = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)"
+			+ "*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+	// if this is a digit?
+	@Value("#{'100' matches '\\d+' }")
+	private boolean validDigit;
+
+	// if this is a digit + ternary operator
+	@Value("#{ ('100' matches '\\d+') == true ? 'yes this is digit' : 'No this is not a digit'  }")
+	private String msg;
+
+	// if this emailBean.emailAddress contains a valid email address?
+	@Value("#{emailBean.emailAddress matches customerBean.emailRegEx}")
+	private boolean validEmail;
+
 	public Customer() {
 		super();
 	}
@@ -111,7 +127,9 @@ public class Customer {
 				+ ", testDivision = " + getTestDivision() + ", testModulus = "
 				+ getTestModulus() + ", testExponentialPower = "
 				+ getTestExponentialPower() + ", warning = " + isWarning()
-				+ ", mapA = " + getMapA() + ", list = " + getList() + "]";
+				+ ", mapA = " + getMapA() + ", list = " + getList()
+				+ ", validDigit = " + isValidDigit() + ", msg = " + getMsg()
+				+ ", validEmail = " + isValidEmail() + "]";
 	}
 
 	public Item getItem() {
@@ -320,6 +338,38 @@ public class Customer {
 
 	public void setList(String list) {
 		this.list = list;
+	}
+
+	public String getEmailRegEx() {
+		return emailRegEx;
+	}
+
+	public void setEmailRegEx(String emailRegEx) {
+		this.emailRegEx = emailRegEx;
+	}
+
+	public boolean isValidDigit() {
+		return validDigit;
+	}
+
+	public void setValidDigit(boolean validDigit) {
+		this.validDigit = validDigit;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public boolean isValidEmail() {
+		return validEmail;
+	}
+
+	public void setValidEmail(boolean validEmail) {
+		this.validEmail = validEmail;
 	}
 
 }

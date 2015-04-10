@@ -21,13 +21,20 @@ public class Customer {
 	@Value("#{addressBean.getFullAddress('mkyong')}")
 	private String fullAddress;
 
+	@Value("#{'mkyong'.toUpperCase()}")
+	private String name;
+
+	@Value("#{priceBean.getSpecialPrice()}")
+	private double amount;
+
 	public Customer() {
 		super();
 	}
 
 	@Override
 	public String toString() {
-		return this.getClass().getName() + " [item = " + getItem()
+		return this.getClass().getName() + " [name = " + getName()
+				+ ", amount = " + getAmount() + ", item = " + getItem()
 				+ ", itemName = " + getItemName() + ", address = "
 				+ getAddress() + ", country = " + getCountry()
 				+ ", fullAddress = " + getFullAddress() + "]";
@@ -71,6 +78,22 @@ public class Customer {
 
 	public void setFullAddress(String fullAddress) {
 		this.fullAddress = fullAddress;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
 	}
 
 }

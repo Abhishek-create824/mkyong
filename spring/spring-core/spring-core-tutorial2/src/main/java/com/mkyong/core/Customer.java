@@ -12,6 +12,15 @@ public class Customer {
 	@Value("#{itemBean.name}")
 	private String itemName;
 
+	@Value("#{addressBean}")
+	private Address address;
+
+	@Value("#{addressBean.country}")
+	private String country;
+
+	@Value("#{addressBean.getFullAddress('mkyong')}")
+	private String fullAddress;
+
 	public Customer() {
 		super();
 	}
@@ -19,7 +28,9 @@ public class Customer {
 	@Override
 	public String toString() {
 		return this.getClass().getName() + " [item = " + getItem()
-				+ ", itemName = " + getItemName() + "]";
+				+ ", itemName = " + getItemName() + ", address = "
+				+ getAddress() + ", country = " + getCountry()
+				+ ", fullAddress = " + getFullAddress() + "]";
 	}
 
 	public Item getItem() {
@@ -36,6 +47,30 @@ public class Customer {
 
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getFullAddress() {
+		return fullAddress;
+	}
+
+	public void setFullAddress(String fullAddress) {
+		this.fullAddress = fullAddress;
 	}
 
 }

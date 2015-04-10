@@ -12,7 +12,7 @@ public class Item {
 
 	@Value("10")
 	// inject interger directly
-	private int qty;
+	private int qtd;
 
 	public Item() {
 		super();
@@ -20,8 +20,8 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return this.getClass().getName() + " [name = " + getName() + ", qty = "
-				+ getQty() + "]";
+		return this.getClass().getName() + " [name = " + getName() + ", qtd = "
+				+ getQtd() + "]";
 	}
 
 	public String getName() {
@@ -32,12 +32,12 @@ public class Item {
 		this.name = name;
 	}
 
-	public int getQty() {
-		return qty;
+	public int getQtd() {
+		return qtd;
 	}
 
-	public void setQty(int qty) {
-		this.qty = qty;
+	public void setQtd(int qtd) {
+		this.qtd = qtd;
 	}
 
 }

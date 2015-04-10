@@ -130,5 +130,5 @@
 	<bean id="FileNameGenerator" class="com.mkyong.common.FileNameGenerator"
 		p:name="mkyong" p:type="txt" />
 
-	<context:component-scan base-package="com.mkyong.customer" />
+	<context:component-scan base-package="com.mkyong.customer.services" />
 </beans>

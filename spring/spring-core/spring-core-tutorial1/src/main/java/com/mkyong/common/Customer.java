@@ -5,6 +5,8 @@ public class Customer {
 	private String address;
 	private int age;
 
+	private Person person;
+
 	public Customer() {
 		super();
 	}
@@ -24,7 +26,8 @@ public class Customer {
 	@Override
 	public String toString() {
 		return this.getClass().getName() + " [name : " + getName()
-				+ ", address : " + getAddress() + ", age : " + getAge() + "]";
+				+ ", address : " + getAddress() + ", age : " + getAge()
+				+ ", person : " + getPerson() + "]";
 	}
 
 	public String getName() {
@@ -49,6 +52,14 @@ public class Customer {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	public Person getPerson() {
+		return person;
+	}
+
+	public void setPerson(Person person) {
+		this.person = person;
 	}
 
 }

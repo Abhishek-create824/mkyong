@@ -18,6 +18,7 @@
 	
 	<modules>
 		<module>spring-core-tutorial1</module>	
+		<module>spring-core-tutorial2</module>	
 	</modules>
 	
 	<dependencies>	

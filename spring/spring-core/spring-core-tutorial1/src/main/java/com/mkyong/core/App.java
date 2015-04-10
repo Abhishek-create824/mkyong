@@ -10,22 +10,28 @@ import com.mkyong.output.OutputHelper;
 public class App {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
-		ApplicationContext context1 = new ClassPathXmlApplicationContext(
+		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"SpringBeans.xml");
 
-		com.mkyong.core.HelloWorld hello1 = (com.mkyong.core.HelloWorld) context1
+		com.mkyong.core.HelloWorld hello1 = (com.mkyong.core.HelloWorld) context
 				.getBean("helloBean");
 		hello1.printHello();
 
-		OutputHelper output = (OutputHelper) context1.getBean("OutputHelper");
+		OutputHelper output = (OutputHelper) context.getBean("OutputHelper");
 		output.generateOutput();
 
-		@SuppressWarnings("resource")
-		ApplicationContext context2 = new AnnotationConfigApplicationContext(
-				AppConfig.class);
-		com.mkyong.hello.HelloWorld hello2 = (com.mkyong.hello.HelloWorld) context2
+		// ---------------------------------//------------------------------------
+
+		context = new AnnotationConfigApplicationContext(AppConfig.class);
+		com.mkyong.hello.HelloWorld hello2 = (com.mkyong.hello.HelloWorld) context
 				.getBean("helloBean");
 
 		hello2.printHelloWorld("Spring3 Java Config");
+
+		CustomerBo customer = (CustomerBo) context.getBean("customer");
+		customer.printMsg("Hello 1");
+
+		SchedulerBo scheduler = (SchedulerBo) context.getBean("scheduler");
+		scheduler.printMsg("Hello 2");
 	}
 }

@@ -61,6 +61,16 @@ public class Customer {
 				+ ", person = " + getPerson() + "]";
 	}
 
+	public void initIt() {
+		System.out.println("Init method after properties are set country: \""
+				+ getCountry() + "\"");
+	}
+
+	public void cleanUp() {
+		System.out.println("Spring Container is destroy! Customer \""
+				+ getCountry() + "\" clean up");
+	}
+
 	public String getName() {
 		return name;
 	}

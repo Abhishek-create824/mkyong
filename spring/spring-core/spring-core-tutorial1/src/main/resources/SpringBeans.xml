@@ -24,7 +24,8 @@
 
 	<!-- context:annotation-config / -->
 
-	<bean id="BaseCustomerMalaysia" class="com.mkyong.common.Customer">
+	<bean id="BaseCustomerMalaysia" class="com.mkyong.common.Customer"
+		init-method="initIt" destroy-method="cleanUp">
 		<property name="country" value="Malaysia" />
 
 		<property name="person" ref="PersonBean" />

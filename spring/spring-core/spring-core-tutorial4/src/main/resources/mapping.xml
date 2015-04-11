@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+	<class name="com.mkyong.core.model.Customer">
+		<map-to xml="cliente" />
+
+		<field name="age" type="integer">
+			<bind-xml name="idade" node="attribute" />
+		</field>
+
+		<field name="flag" type="boolean">
+			<bind-xml name="ativo" node="element" />
+		</field>
+
+		<field name="name" type="string">
+			<bind-xml name="nome" node="element" />
+		</field>
+
+		<field name="address" type="string">
+			<bind-xml name="endereco" node="element" />
+		</field>
+	</class>
+</mapping>

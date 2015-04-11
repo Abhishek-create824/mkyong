@@ -8,10 +8,10 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>spring-core-tutorial1</artifactId>
+	<artifactId>spring-core-tutorial5</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring Quick Start</name>
+	<name>Spring JDBC Support</name>
 	<description></description>
 
 	<properties>
@@ -23,7 +23,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
-		
+
 		<!-- Spring JDBC -->
 		<dependency>
 			<groupId>org.springframework</groupId>

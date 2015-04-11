@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 public class CustomerDAO implements DAO {
 	@Override
 	public String toString() {
-		return "Hello , This is CustomerDAO";
+		return this.getClass().getName() + " []";
 	}
 }

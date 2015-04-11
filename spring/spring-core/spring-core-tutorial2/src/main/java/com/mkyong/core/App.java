@@ -55,5 +55,18 @@ public class App {
 				.getBean("customerService");
 		System.out.println(cust);
 
+		cust = (CustomerService) context.getBean("customerServiceProxy");
+
+		System.out.println("*************************");
+		cust.printName();
+		System.out.println("*************************");
+		cust.printURL();
+		System.out.println("*************************");
+		try {
+			cust.printThrowException();
+		} catch (Exception e) {
+
+		}
+
 	}
 }

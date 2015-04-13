@@ -11,7 +11,7 @@
 	<artifactId>spring-core-tutorial2</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring Expression Language (Spring 3.0)</name>
+	<name>Spring Expression Language (Spring 3.0) - tutorial2</name>
 	<description></description>
 
 	<properties>

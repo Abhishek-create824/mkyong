@@ -11,7 +11,7 @@
 	<artifactId>spring-core-tutorial4</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring Object/XML mapping example</name>
+	<name>Spring Object/XML mapping example - tutorial4</name>
 	<description></description>
 
 	<properties>

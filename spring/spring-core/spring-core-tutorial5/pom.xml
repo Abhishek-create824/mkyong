@@ -11,7 +11,7 @@
 	<artifactId>spring-core-tutorial5</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring JDBC Support</name>
+	<name>Spring JDBC Support - tutorial5</name>
 	<description></description>
 
 	<properties>

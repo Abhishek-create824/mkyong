@@ -12,7 +12,7 @@
 	<artifactId>mongodb-tutorial2</artifactId>
 	<packaging>jar</packaging>
 
-	<name>2. Java MongoDB Examples</name>
+	<name>2. Java MongoDB Examples - tutorial2</name>
 	<description></description>
 
 	<dependencies>

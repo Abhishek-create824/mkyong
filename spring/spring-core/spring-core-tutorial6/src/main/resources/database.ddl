@@ -1,5 +1,7 @@
-DROP TABLE IF EXISTS stock;
-CREATE TABLE stock (
+CREATE SCHEMA mkyong;
+
+DROP TABLE IF EXISTS mkyong.stock;
+CREATE TABLE mkyong.stock (
   STOCK_ID SERIAL,
   STOCK_CODE VARCHAR(10) NOT NULL,
   STOCK_NAME VARCHAR(20) NOT NULL,
@@ -9,5 +11,5 @@ CREATE TABLE stock (
 );
 
 
-DELETE FROM stock;
-SELECT * FROM stock;
+DELETE FROM mkyong.stock;
+SELECT * FROM mkyong.stock;

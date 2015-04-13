@@ -11,7 +11,7 @@
 	<artifactId>spring-core-tutorial3</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring AOP + AspectJ framework</name>
+	<name>Spring AOP + AspectJ framework - tutorial3</name>
 	<description></description>
 
 	<properties>

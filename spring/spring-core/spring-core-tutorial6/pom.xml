@@ -11,7 +11,7 @@
 	<artifactId>spring-core-tutorial6</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring Hibernate Support</name>
+	<name>Spring Hibernate Support - tutorial6</name>
 	<description></description>
 
 	<properties>

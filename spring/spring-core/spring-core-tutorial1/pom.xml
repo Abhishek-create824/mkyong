@@ -11,7 +11,7 @@
 	<artifactId>spring-core-tutorial1</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Spring Quick Start</name>
+	<name>Spring Quick Start - tutorial1</name>
 	<description></description>
 
 	<properties>

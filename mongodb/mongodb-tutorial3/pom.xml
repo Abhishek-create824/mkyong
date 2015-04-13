@@ -12,7 +12,7 @@
 	<artifactId>mongodb-tutorial3</artifactId>
 	<packaging>jar</packaging>
 
-	<name>3. Spring Data MongoDB Examples</name>
+	<name>3. Spring Data MongoDB Examples - tutorial3</name>
 	<description></description>
 
 	<properties>		

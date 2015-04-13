@@ -1,12 +1,12 @@
-package com.mkyong.dao;
+package com.mkyong.dao.impl;
 
 import java.util.List;
 
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
 import br.com.cams7.jpa.repository.BaseRepositoryImpl;
 
+import com.mkyong.dao.StockDAO;
 import com.mkyong.model.Stock;
 
 @Repository
@@ -18,10 +18,10 @@ public class StockDAOImpl extends BaseRepositoryImpl<Stock, Long> implements
 	}
 
 	public Stock findByStockCode(String stockCode) {
-		Session session = getSessionFactory().openSession();
-		List<?> list = session.createQuery("from Stock where code=:stockCode")
+		List<?> list = getCurrentSession()
+				.createQuery("from Stock where code=:stockCode")
 				.setString("stockCode", stockCode).list();
-		session.close();
+
 		return (Stock) list.get(0);
 	}
 

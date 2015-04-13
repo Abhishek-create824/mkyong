@@ -1,6 +1,10 @@
 CREATE SCHEMA mkyong;
 
 DROP TABLE IF EXISTS mkyong.stock;
+
+DROP TABLE IF EXISTS mkyong.product_qoh;
+DROP TABLE IF EXISTS mkyong.product;
+
 CREATE TABLE mkyong.stock (
   STOCK_ID SERIAL,
   STOCK_CODE VARCHAR(10) NOT NULL,
@@ -10,6 +14,23 @@ CREATE TABLE mkyong.stock (
   CONSTRAINT UN_STOCK_NAME UNIQUE (STOCK_NAME)
 );
 
+CREATE TABLE  mkyong.product (
+  PRODUCT_ID SERIAL PRIMARY KEY,
+  PRODUCT_CODE VARCHAR(20) NOT NULL,
+  PRODUCT_DESC VARCHAR(255) NOT NULL
+); 
+CREATE TABLE  mkyong.product_qoh (
+  QOH_ID SERIAL PRIMARY KEY,
+  PRODUCT_ID integer REFERENCES mkyong.product(PRODUCT_ID),
+  QTY integer NOT NULL  
+);
+
 
 DELETE FROM mkyong.stock;
 SELECT * FROM mkyong.stock;
+
+DELETE FROM mkyong.product;
+SELECT * FROM mkyong.product;
+
+DELETE FROM mkyong.product_qoh;
+SELECT * FROM mkyong.product_qoh;

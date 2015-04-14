@@ -23,6 +23,7 @@
 		<module>spring-core-tutorial4</module>
 		<module>spring-core-tutorial5</module>
 		<module>spring-core-tutorial6</module>
+		<module>spring-core-tutorial6.2</module>
 	</modules>
 	
 	<dependencies>	

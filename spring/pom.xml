@@ -19,6 +19,7 @@
 	<properties>
 		<aspectj.version>1.8.5</aspectj.version>
 		<hibernate.version>4.3.8.Final</hibernate.version>
+		<struts2.version>2.3.20</struts2.version>
 	</properties>
 	
 	<modules>
@@ -122,7 +123,51 @@
 				<groupId>commons-dbcp</groupId>
 				<artifactId>commons-dbcp</artifactId>
 				<version>1.4</version>
-			</dependency>			
+			</dependency>	
+
+			<!-- Spring WEB -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!-- Spring Struts -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-struts</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!-- Spring MVC-->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>${spring.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			<!-- Spring Beans-->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-web-api</artifactId>
+				<version>7.0</version>
+				<!--scope>provided</scope-->
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-core</artifactId>
+				<version>${struts2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts2-spring-plugin</artifactId>
+				<version>${struts2.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	

@@ -17,14 +17,13 @@
 	<description>Exemplos de Spring Core: http://www.mkyong.com/tutorials/spring-tutorials/</description>
 	
 	<modules>
-		<module>spring-core-tutorial1</module>	
-		<module>spring-core-tutorial2</module>	
-		<module>spring-core-tutorial3</module>
-		<module>spring-core-tutorial4</module>
-		<module>spring-core-tutorial5</module>
-		<module>spring-core-tutorial6</module>
-		<module>spring-core-tutorial6.2</module>
-		<module>spring-core-tutorial7</module>
+		<module>Spring-Quick-Start</module>	
+		<module>Spring-Expression-Language</module>	
+		<module>Spring-AOP-AspectJ-framework</module>
+		<module>Spring-Object-XML-Mapper</module>
+		<module>Spring-JDBC-Support</module>
+		<module>Spring-Hibernate-Support</module>
+		<module>Spring-Email-Support</module>
 	</modules>
 	
 	<dependencies>	

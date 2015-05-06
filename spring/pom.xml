@@ -18,8 +18,7 @@
 	
 	<properties>
 		<aspectj.version>1.8.5</aspectj.version>
-		<hibernate.version>4.3.8.Final</hibernate.version>
-		<struts2.version>2.3.20</struts2.version>
+		<hibernate.version>4.3.8.Final</hibernate.version>		
 	</properties>
 	
 	<modules>
@@ -27,21 +26,7 @@
 	</modules>
 	
 	<dependencyManagement>
-		<dependencies>			
-			<!-- Spring Context -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			
-			<!-- Spring AOP + AspectJ -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aop</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
- 
+		<dependencies> 
 			<dependency>
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjrt</artifactId>
@@ -56,13 +41,6 @@
 				<version>${aspectj.version}</version>
 			</dependency>
 			
-			<!-- spring oxm -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-oxm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-	 
 			<!-- Uses Castor for XML -->
 			<dependency>
 				<groupId>org.codehaus.castor</groupId>
@@ -79,34 +57,13 @@
 				<version>2.11.0</version>
 			</dependency>
 			
-			<!-- Spring JDBC -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-jdbc</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-
 			<!-- Postgresql database driver -->
 			<dependency>
 				<groupId>postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>9.1-901-1.jdbc4</version>
 			</dependency>
-			
-			<!-- Spring Tx -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-tx</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			
-			<!-- Spring ORM -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-orm</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			
+						
 			<!-- Hibernate framework -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
@@ -123,51 +80,7 @@
 				<groupId>commons-dbcp</groupId>
 				<artifactId>commons-dbcp</artifactId>
 				<version>1.4</version>
-			</dependency>	
-
-			<!-- Spring WEB -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-web</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<!-- Spring Struts -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-struts</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			<!-- Spring MVC-->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring.version}</version>
-				<scope>runtime</scope>
-			</dependency>
-			<!-- Spring Beans-->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-beans</artifactId>
-				<version>${spring.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>javax</groupId>
-				<artifactId>javaee-web-api</artifactId>
-				<version>7.0</version>
-				<!--scope>provided</scope-->
-			</dependency>
-			
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts2-core</artifactId>
-				<version>${struts2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.struts</groupId>
-				<artifactId>struts2-spring-plugin</artifactId>
-				<version>${struts2.version}</version>
-			</dependency>
+			</dependency>				
 		</dependencies>
 	</dependencyManagement>
 	

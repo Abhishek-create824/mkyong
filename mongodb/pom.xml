@@ -17,8 +17,8 @@
 	<description>Exemplos de Mongo DB: http://www.mkyong.com/tutorials/java-mongodb-tutorials/</description>
 	
 	<modules>
-		<module>mongodb-tutorial2</module>	
-		<module>mongodb-tutorial3</module>	
+		<module>Java-MongoDB-Examples</module>	
+		<module>Spring-Data-MongoDB-Examples</module>	
 	</modules>
 	
 	<dependencies>

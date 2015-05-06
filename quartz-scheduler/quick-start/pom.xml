@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>br.com.cams7.teste.mykong</groupId>
+		<artifactId>quartz-scheduler</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>br.com.cams7.teste.mykong.quartz-scheduler</groupId>
+	<artifactId>quick-start</artifactId>
+	
+	<packaging>pom</packaging>
+	
+	<name>Quick Start</name>
+	<description></description>
+	
+	<modules>
+		<module>Quartz-1.6-hello-world-example</module>	
+		<module>Quartz-2-hello-world-example</module>
+		<module>Quartz-2-JobListener-example</module>
+		<module>Multiple-Jobs-In-Quartz</module>
+		<module>Trigger-A-Quartz-Job-Manually</module>
+	</modules>
+	
+	<dependencies>	
+	</dependencies>	
+</project>

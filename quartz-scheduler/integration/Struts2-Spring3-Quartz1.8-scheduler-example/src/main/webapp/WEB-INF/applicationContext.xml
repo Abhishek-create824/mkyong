@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans		http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+  <!-- Spring Quartz Scheduler job -->
+  <bean name="schedulerJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+	<property name="jobClass" value="com.mkyong.quartz.SchedulerJob" />
+  </bean>
+ 
+  <!-- Cron Trigger, run every 10 seconds -->
+  <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	<property name="jobDetail" ref="schedulerJob" />
+	<property name="cronExpression" value="0/3 * * * * ?" />
+  </bean>
+ 
+  <!-- DI -->
+  <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	<property name="jobDetails">
+		<list>
+			<ref bean="schedulerJob" />
+		</list>
+	</property>
+ 
+	<property name="triggers">
+		<list>
+			<ref bean="cronTrigger" />
+		</list>
+	</property>
+  </bean>
+ 
+</beans>

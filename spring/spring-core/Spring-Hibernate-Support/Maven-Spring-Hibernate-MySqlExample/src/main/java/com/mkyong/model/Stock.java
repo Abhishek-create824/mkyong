@@ -11,7 +11,7 @@ import javax.persistence.UniqueConstraint;
 import br.com.cams7.jpa.domain.BaseEntity;
 
 @Entity
-@Table(name = "stock", catalog = "mkyong", uniqueConstraints = {
+@Table(name = "stock", uniqueConstraints = {
 		@UniqueConstraint(columnNames = "STOCK_NAME"),
 		@UniqueConstraint(columnNames = "STOCK_CODE") })
 public class Stock extends BaseEntity<Long> {

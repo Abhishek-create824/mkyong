@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import br.com.cams7.jpa.domain.BaseEntity;
 
 @Entity
-@Table(name = "product", catalog = "mkyong")
+@Table(name = "product")
 public class Product extends BaseEntity<Long> {
 
 	private static final long serialVersionUID = 1L;

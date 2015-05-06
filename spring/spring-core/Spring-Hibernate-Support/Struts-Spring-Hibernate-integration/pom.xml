@@ -134,10 +134,10 @@
 			<artifactId>commons-dbcp</artifactId>
 		</dependency>
 
-		<!-- Postgresql database driver -->
+		<!-- H2 database driver -->
 		<dependency>
-			<groupId>postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
 		</dependency>
 
 		<dependency>

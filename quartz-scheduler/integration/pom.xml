@@ -19,7 +19,9 @@
 	<modules>
 		<module>Spring3-Quartz1.8-scheduler-example</module>	
 		<!--module>JSF2-Quartz2-scheduler-example</module-->
+		<!--WEB Example-->
 		<module>Struts2-Quartz2-scheduler-example</module>
+		<!--WEB Example-->
 		<module>Struts2-Spring3-Quartz1.8-scheduler-example</module>
 		<!--module>Struts2-Spring2.5.6-Quartz1.6-scheduler-example</module>
 		<module>Struts1-Quartz2-scheduler-example</module>

@@ -22,7 +22,8 @@
 	</properties>
 	
 	<modules>
-		<module>spring-core</module>		
+		<module>spring-core</module>	
+		<module>spring-batch</module>
 	</modules>
 	
 	<dependencyManagement>

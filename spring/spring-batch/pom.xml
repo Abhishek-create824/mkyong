@@ -61,6 +61,7 @@
 		<!--module>Spring-Batch-unit-test-example</module-->
 		<!--5. Advance-->
 		<module>Spring-Batch-partitioner-example</module>
+		<module>Spring-Batch-listener-example</module>
 	</modules>
 	
 	<dependencies>	

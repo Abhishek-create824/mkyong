@@ -45,6 +45,7 @@
 	
 	<modules>
 		<module>Spring-Batch-Hello-World-Example</module>	
+		<module>Spring-Batch-TaskletStep-Example</module>
 	</modules>
 	
 	<dependencies>	

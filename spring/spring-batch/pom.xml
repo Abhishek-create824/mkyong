@@ -51,6 +51,8 @@
 		<module>Spring-Batch-Example_XML-File-To-MongoDB-database</module>
 		<module>Spring-Batch-Example_XML-File-To-CSV-File</module>
 		<module>Spring-Batch-Example_H2-Database-To-XML</module>
+		<!--module>Spring-Batch-MultiResourceItemReader-example</module-->
+		<module>Spring-Batch-Spring-TaskScheduler-example</module>
 	</modules>
 	
 	<dependencies>	

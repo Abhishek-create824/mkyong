@@ -50,6 +50,7 @@
 		<module>Spring-Batch-Example_CSV-File-To-H2-database</module>
 		<module>Spring-Batch-Example_XML-File-To-MongoDB-database</module>
 		<module>Spring-Batch-Example_XML-File-To-CSV-File</module>
+		<module>Spring-Batch-Example_H2-Database-To-XML</module>
 	</modules>
 	
 	<dependencies>	

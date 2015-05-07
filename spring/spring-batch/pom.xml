@@ -47,6 +47,7 @@
 		<module>Spring-Batch-Hello-World-Example</module>	
 		<module>Spring-Batch-TaskletStep-Example</module>
 		<module>Run-Spring-Batch-Job-With-CommandLineJobRunner</module>
+		<module>Spring-Batch-Example_CSV-File-To-H2-database</module>
 	</modules>
 	
 	<dependencies>	

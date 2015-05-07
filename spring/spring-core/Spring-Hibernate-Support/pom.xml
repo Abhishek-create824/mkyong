@@ -16,7 +16,7 @@
 	<description></description>
 	
 	<modules>
-		<module>Maven-Spring-Hibernate-MySqlExample</module>	
+		<module>Spring-Hibernate-H2-database-Example</module>	
 		<module>Struts-Spring-Hibernate-integration</module>	
 	</modules>
 	

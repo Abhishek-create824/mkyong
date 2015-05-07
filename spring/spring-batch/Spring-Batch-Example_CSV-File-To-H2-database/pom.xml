@@ -4,57 +4,41 @@
 
 	<parent>
 		<groupId>br.com.cams7.teste.mykong.spring</groupId>
-		<artifactId>Spring-Hibernate-Support</artifactId>
+		<artifactId>spring-batch</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>Maven-Spring-Hibernate-MySqlExample</artifactId>
+	<artifactId>Spring-Batch-Example_CSV-File-To-H2-database</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Maven + Spring + Hibernate + MySql Example, Maven + (Spring + Hibernate) Annotation + MySql Example, Spring AOP transaction management in Hibernate</name>
+	<name>Spring Batch Example - CSV File To H2 database</name>
 	<description></description>
 
 	<properties>
 	</properties>
 
 	<dependencies>
-		<!-- Spring Context -->
+		<!-- Spring jdbc, for database -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-		</dependency>		
-		
-		<!-- Spring Tx -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
+			<artifactId>spring-jdbc</artifactId>
 		</dependency>
-
-		<!-- Spring ORM support -->
+ 				
+		<!-- Spring Batch dependencies -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-		</dependency>
-
-		<!-- Hibernate framework -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-core</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-infrastructure</artifactId>
 		</dependency>
-		
+ 		
+		<!-- H2 database driver -->
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>commons-dbcp</groupId>
-			<artifactId>commons-dbcp</artifactId>
-		</dependency>
+		</dependency> 
 	</dependencies>
 
 	<build>
@@ -66,7 +50,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.mkyong.core.App</mainClass>
+							<mainClass>com.mkyong.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

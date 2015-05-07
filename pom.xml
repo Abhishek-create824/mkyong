@@ -118,7 +118,14 @@
 				<groupId>org.apache.struts</groupId>
 				<artifactId>struts2-spring-plugin</artifactId>
 				<version>${struts2.version}</version>
-			</dependency>			
+			</dependency>
+
+			<!-- Quartz framework -->
+			<dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz</artifactId>
+				<version>2.2.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

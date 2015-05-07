@@ -57,6 +57,10 @@
 		<!--3. Scheduler-->
 		<module>Spring-Batch-Spring-TaskScheduler-example</module>
 		<module>Spring-Batch-Quartz-Scheduler-example</module>
+		<!--4. Unit Test-->
+		<!--module>Spring-Batch-unit-test-example</module-->
+		<!--5. Advance-->
+		<module>Spring-Batch-partitioner-example</module>
 	</modules>
 	
 	<dependencies>	

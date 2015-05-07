@@ -60,6 +60,25 @@
 			</dependency>
 			
 			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-mongodb</artifactId>
+				<version>1.7.0.RELEASE</version>
+			</dependency>						
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>mongo-java-driver</artifactId>
+				<version>3.0.0</version>
+			</dependency>
+			
+			<!-- Junit -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+			</dependency>
+			
+			<dependency>
 				<groupId>javax</groupId>
 				<artifactId>javaee-web-api</artifactId>
 				<version>7.0</version>
@@ -99,15 +118,7 @@
 				<groupId>org.apache.struts</groupId>
 				<artifactId>struts2-spring-plugin</artifactId>
 				<version>${struts2.version}</version>
-			</dependency>
-			
-			<!-- Junit -->
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.12</version>
-				<scope>test</scope>
-			</dependency>
+			</dependency>			
 		</dependencies>
 	</dependencyManagement>
 

@@ -49,6 +49,7 @@
 		<module>Run-Spring-Batch-Job-With-CommandLineJobRunner</module>
 		<module>Spring-Batch-Example_CSV-File-To-H2-database</module>
 		<module>Spring-Batch-Example_XML-File-To-MongoDB-database</module>
+		<module>Spring-Batch-Example_XML-File-To-CSV-File</module>
 	</modules>
 	
 	<dependencies>	

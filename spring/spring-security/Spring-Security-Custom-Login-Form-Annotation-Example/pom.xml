@@ -8,11 +8,11 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>Spring-Security-Custom-Login-Form-XML-Example</artifactId>
+	<artifactId>Spring-Security-Custom-Login-Form-Annotation-Example</artifactId>
 	<packaging>war</packaging>
 
-	<name>Spring Security Custom Login Form XML Example</name>
-	<description>Spring MVC + Spring Security XML-based project, custom login form, logout function, CSRF protection and in-memory authentication</description>
+	<name>Spring Security Custom Login Form Annotation Example</name>
+	<description>Spring MVC + Spring Security annotations-based project, custom login form, logout function, CSRF protection and in-memory authentication</description>
 	
 	<!--properties>
 		<spring.security.version>3.2.7.RELEASE</spring.security.version>
@@ -49,7 +49,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>SpringSecurityCustomLoginFormXMLExample</finalName>
+		<finalName>SpringSecurityCustomLoginFormAnnotationExample</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -57,7 +57,7 @@
 				<version>2.2</version>
 
 				<configuration>
-					<path>/SpringSecurityCustomLoginFormXMLExample</path>
+					<path>/SpringSecurityCustomLoginFormAnnotationExample</path>
 					<update>true</update>
 					<url>http://localhost:8080/manager/text</url>
 					<username>tomcat</username>

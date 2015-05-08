@@ -17,7 +17,8 @@ public class HelloController {
 		model.addObject("title", "Spring Security Custom Login Form");
 		model.addObject("message", "This is welcome page!");
 		model.setViewName("hello");
-		return model; 
+		return model;
+ 
 	}
  
 	@RequestMapping(value = "/admin**", method = RequestMethod.GET)
@@ -28,7 +29,8 @@ public class HelloController {
 		model.addObject("message", "This is protected page!");
 		model.setViewName("admin");
  
-		return model; 
+		return model;
+ 
 	}
  
 	//Spring Security see this :
@@ -47,9 +49,10 @@ public class HelloController {
 		}
 		model.setViewName("login");
  
-		return model; 
+		return model;
+ 
 	}
-	
+		
 	// finaliza sessão  
     @RequestMapping(value = "/logout", method = RequestMethod.POST)  
     public String logout(HttpSession session) {  

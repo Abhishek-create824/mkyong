@@ -17,8 +17,8 @@
 	<description>Exemplos de Spring Security: http://www.mkyong.com/tutorials/spring-security-tutorials/</description>
 	
 	<properties>
-		<!--spring.security.version>4.0.1.RELEASE</spring.security.version-->
-		<spring.security.version>3.2.7.RELEASE</spring.security.version>
+		<spring.security.version>4.0.1.RELEASE</spring.security.version>
+		<!--spring.security.version>3.2.7.RELEASE</spring.security.version-->
 	</properties>
 	
 	<dependencyManagement>

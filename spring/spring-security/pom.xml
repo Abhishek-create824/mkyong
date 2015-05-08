@@ -42,6 +42,7 @@
 		<!--1. Spring Security Examples-->
 		<module>Spring-Security-Hello-World-XML-Example</module>
 		<module>Spring-Security-Hello-World-Annotation-Example</module>
+		<module>Spring-Security-Custom-Login-Form-XML-Example</module>
 	</modules>
 	
 	<dependencies>	

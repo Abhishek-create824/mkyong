@@ -40,7 +40,8 @@
 	
 	<modules>
 		<!--1. Spring Security Examples-->
-		<module>Spring-Security-Hello-World-XML-Example</module>	
+		<module>Spring-Security-Hello-World-XML-Example</module>
+		<module>Spring-Security-Hello-World-Annotation-Example</module>
 	</modules>
 	
 	<dependencies>	

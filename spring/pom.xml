@@ -24,6 +24,7 @@
 	<modules>
 		<module>spring-core</module>	
 		<module>spring-batch</module>
+		<module>spring-security</module>
 	</modules>
 	
 	<dependencyManagement>

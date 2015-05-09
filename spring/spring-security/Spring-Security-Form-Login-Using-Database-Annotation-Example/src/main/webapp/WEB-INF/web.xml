@@ -4,10 +4,9 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
 
-	<display-name>Spring Security Form Login Using Database - XML Example</display-name>
+	<display-name>Spring Security Form Login Using Database - Annotation Example</display-name>
 	
-	<!-- Spring MVC -->
-	<servlet>
+	<!--servlet>
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
@@ -21,21 +20,18 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
  
-        <!-- Loads Spring Security config file -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring-security.xml,/WEB-INF/spring-database.xml</param-value>
 	</context-param>
  
-	<!-- Spring Security -->
 	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy
 		</filter-class>
-	</filter>
- 
+	</filter> 
 	<filter-mapping>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping>	
+	</filter-mapping-->	
 </web-app>

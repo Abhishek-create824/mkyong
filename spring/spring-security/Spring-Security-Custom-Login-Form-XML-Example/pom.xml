@@ -14,10 +14,6 @@
 	<name>Spring Security Custom Login Form XML Example</name>
 	<description>Spring MVC + Spring Security XML-based project, custom login form, logout function, CSRF protection and in-memory authentication</description>
 	
-	<!--properties>
-		<spring.security.version>3.2.7.RELEASE</spring.security.version>
-	</properties-->
-
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>

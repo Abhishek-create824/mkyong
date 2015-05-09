@@ -8,11 +8,11 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>Spring-Security-Custom-Login-Form-Annotation-Example</artifactId>
+	<artifactId>Spring-Security-Form-Login-Using-Database-XML-Example</artifactId>
 	<packaging>war</packaging>
 
-	<name>Spring Security Custom Login Form Annotation Example</name>
-	<description>Spring MVC + Spring Security annotations-based project, custom login form, logout function, CSRF protection and in-memory authentication</description>
+	<name>Spring Security Form Login Using Database - XML Example</name>
+	<description>Database authentication, Spring Security, JSP taglibs, JDBC, customizes 403 access denied page and etc, both in XML</description>
 		
 	<dependencies>
 		<dependency>
@@ -26,6 +26,12 @@
 			<artifactId>spring-webmvc</artifactId>
 		</dependency>
 		
+		<!-- Spring jdbc, for database -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		
 		<!-- Spring Security -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -37,15 +43,27 @@
 			<artifactId>spring-security-config</artifactId>
 		</dependency>
 		
+		<!-- Spring Security JSP Taglib -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+		</dependency>
+				
 		<!-- jstl for jsp page -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
+		
+		<!-- H2 database driver -->
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>SpringSecurityCustomLoginFormAnnotationExample</finalName>
+		<finalName>SpringSecurityFormLoginUsingDatabaseXMLExample</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -53,7 +71,7 @@
 				<version>2.2</version>
 
 				<configuration>
-					<path>/SpringSecurityCustomLoginFormAnnotationExample</path>
+					<path>/SpringSecurityFormLoginUsingDatabaseXMLExample</path>
 					<update>true</update>
 					<url>http://localhost:8080/manager/text</url>
 					<username>tomcat</username>

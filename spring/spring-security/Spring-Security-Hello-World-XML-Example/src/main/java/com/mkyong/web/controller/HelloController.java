@@ -33,7 +33,7 @@ public class HelloController {
 	}
 	
 	// finaliza sessão  
-    @RequestMapping(value = "/logout", method = RequestMethod.GET)  
+    @RequestMapping(value = "/j_spring_security_logout", method = RequestMethod.GET)  
     public String logout(HttpSession session) {  
         session.invalidate();  
         return "redirect:/";  

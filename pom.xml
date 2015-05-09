@@ -51,7 +51,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
+						
 			<!-- need this for @Configuration -->
 			<dependency>
 				<groupId>cglib</groupId>

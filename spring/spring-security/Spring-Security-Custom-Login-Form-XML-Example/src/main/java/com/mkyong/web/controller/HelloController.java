@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import javax.servlet.http.HttpSession;
  
 @Controller
 public class HelloController {
@@ -48,13 +47,5 @@ public class HelloController {
 		model.setViewName("login");
  
 		return model; 
-	}
-	
-	// finaliza sessão  
-    @RequestMapping(value = "/logout", method = RequestMethod.POST)  
-    public String logout(HttpSession session) {  
-        session.invalidate();  
-        return "redirect:/";  
-    }  
- 
+	} 
 }

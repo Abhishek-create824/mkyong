@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>br.com.cams7.teste.mykong</groupId>
+		<artifactId>spring</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>br.com.cams7.teste.mykong.spring</groupId>
+	<artifactId>spring-mvc</artifactId>
+	
+	<packaging>pom</packaging>
+	
+	<name>Spring MVC Tutorial</name>
+	<description>Exemplos de Spring MVC: http://www.mkyong.com/tutorials/spring-mvc-tutorials/</description>
+	
+	<properties>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>						
+		</dependencies>
+	</dependencyManagement>
+	
+	<modules>
+		<!--Spring MVC Quick Start-->
+		<module>Spring3-MVC-Hello-World-Example</module>
+	</modules>
+	
+	<dependencies>	
+	</dependencies>	
+</project>

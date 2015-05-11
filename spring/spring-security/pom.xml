@@ -60,6 +60,7 @@
 		<module>Spring-Security-Form-Login-Using-Database-Annotation-Example</module>
 		<module>Spring-Security-Limit-Login-Attempts-XML-Example</module>
 		<module>Spring-Security-Limit-Login-Attempts-Annotation-Example</module>
+		<module>Spring-Security-Remember-Me-XML-Example</module>
 	</modules>
 	
 	<dependencies>	

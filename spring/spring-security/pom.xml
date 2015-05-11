@@ -61,6 +61,7 @@
 		<module>Spring-Security-Limit-Login-Attempts-XML-Example</module>
 		<module>Spring-Security-Limit-Login-Attempts-Annotation-Example</module>
 		<module>Spring-Security-Remember-Me-XML-Example</module>
+		<module>Spring-Security-Password-Hashing-XML-Example</module>
 	</modules>
 	
 	<dependencies>	

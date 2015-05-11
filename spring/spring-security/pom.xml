@@ -41,6 +41,12 @@
 				<artifactId>spring-security-taglibs</artifactId>
 				<version>${spring.security.version}</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>1.1.3</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
@@ -52,6 +58,7 @@
 		<module>Spring-Security-Custom-Login-Form-Annotation-Example</module>
 		<module>Spring-Security-Form-Login-Using-Database-XML-Example</module>
 		<module>Spring-Security-Form-Login-Using-Database-Annotation-Example</module>
+		<module>Spring-Security-Limit-Login-Attempts-Annotation-Example</module>
 	</modules>
 	
 	<dependencies>	

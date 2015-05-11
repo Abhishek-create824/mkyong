@@ -57,6 +57,7 @@
 		<module>Spring-Security-Remember-Me-XML-Example</module>
 		<module>Spring-Security-Password-Hashing-XML-Example</module>
 		<module>Spring-Security-Hibernate-XML-Example</module>
+		<module>Spring-Security-Hibernate-Annotation-Example</module>
 	</modules>
 	
 	<dependencies>	

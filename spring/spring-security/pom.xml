@@ -58,6 +58,7 @@
 		<module>Spring-Security-Custom-Login-Form-Annotation-Example</module>
 		<module>Spring-Security-Form-Login-Using-Database-XML-Example</module>
 		<module>Spring-Security-Form-Login-Using-Database-Annotation-Example</module>
+		<module>Spring-Security-Limit-Login-Attempts-XML-Example</module>
 		<module>Spring-Security-Limit-Login-Attempts-Annotation-Example</module>
 	</modules>
 	

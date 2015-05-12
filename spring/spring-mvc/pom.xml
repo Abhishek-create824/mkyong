@@ -28,6 +28,26 @@
 		<!--Spring MVC Quick Start-->
 		<module>Spring3-MVC-Hello-World-Example</module>
 		<module>Spring3-REST-Hello-World-Example</module>
+		<!--module>Spring2.5.6-MVC-Hello-World-Example</module>
+		<module>Spring2.5.6-MVC-Hello-World-Annotation-Example</module-->
+		<!--Handler Mapping-->
+		<!--module>BeanNameUrlHandlerMapping-Example</module>
+		<module>ControllerClassNameHandlerMapping-Example</module>
+		<module>SimpleUrlHandlerMapping-Example</module>
+		<module>Configure the handler mapping priority</module-->
+		<!--Controller-->
+		<!--module>MultiActionController-Example</module>
+		<module>MultiActionController-Annotation-Example</module>
+		<module>PropertiesMethodNameResolver-Example</module>
+		<module>ParameterMethodNameResolver-Example</module>
+		<module>ParameterizableViewController-Example</module-->
+		<!--View Resolver-->
+		<!--module>InternalResourceViewResolver-Example</module>
+		<module>XmlViewResolver-Example</module>
+		<module>ResourceBundleViewResolver-Example</module>
+		<module>Configure-Multiple-View-Resolvers-Priority</module-->
+		<!--Form Handling-->
+		<module>Form-Handling-XML-Example</module>
 	</modules>
 	
 	<dependencies>	

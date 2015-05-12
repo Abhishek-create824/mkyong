@@ -30,28 +30,46 @@
 		<module>Spring3-REST-Hello-World-Example</module>
 		<!--module>Spring2.5.6-MVC-Hello-World-Example</module>
 		<module>Spring2.5.6-MVC-Hello-World-Annotation-Example</module-->
+		
 		<!--Handler Mapping-->
 		<!--module>BeanNameUrlHandlerMapping-Example</module>
 		<module>ControllerClassNameHandlerMapping-Example</module>
 		<module>SimpleUrlHandlerMapping-Example</module>
 		<module>Configure the handler mapping priority</module-->
+		
 		<!--Controller-->
 		<!--module>MultiActionController-Example</module>
 		<module>MultiActionController-Annotation-Example</module>
 		<module>PropertiesMethodNameResolver-Example</module>
 		<module>ParameterMethodNameResolver-Example</module>
 		<module>ParameterizableViewController-Example</module-->
+		
 		<!--View Resolver-->
 		<!--module>InternalResourceViewResolver-Example</module>
 		<module>XmlViewResolver-Example</module>
 		<module>ResourceBundleViewResolver-Example</module>
 		<module>Configure-Multiple-View-Resolvers-Priority</module-->
+		
 		<!--Form Handling-->
 		<module>Form-Handling-XML-Example</module>
 		<module>Form-Handling-Annotation-Example</module>
 		<!--module>Handling-Duplicate-Form-Submission</module>
 		<module>RedirectView-Example</module-->
 		<module>Handling-Multipage-Wizard-Forms</module>
+		
+		<!--Spring’s Form Tag Library-->
+		<!--module>Textbox-Example</module>
+		<module>Password-Example</module>
+		<module>Textarea-Example</module>
+		<module>Checkbox-And-Checkboxes-Example</module>
+		<module>Radiobutton-And-Radiobuttons-Example</module>
+		<module>Dropdown-And-List-Box-Example</module>
+		<module>Hidden-Value-Example</module>
+		<module>Form-Errors-Tag-Example</module>
+		<module>File-Upload-Example</module-->
+		
+		<!--Integrating Spring MVC with other frameworks-->
+		<module>Spring3-MVC-And-JSR303-Valid-Example</module>
 	</modules>
 	
 	<dependencies>	

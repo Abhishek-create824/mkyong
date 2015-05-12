@@ -4,7 +4,7 @@
 
 	<parent>
 		<groupId>br.com.cams7.teste.mykong.spring</groupId>
-		<artifactId>spring-security</artifactId>
+		<artifactId>spring-mvc</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 

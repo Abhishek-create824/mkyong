@@ -8,11 +8,11 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>Form-Handling-Annotation-Example</artifactId>
+	<artifactId>Spring3-MVC-And-JSR303-Valid-Example</artifactId>
 	<packaging>war</packaging>
 
-	<name>Form handling annotation example</name>
-	<description>Form handling in Spring MVC, annotation version</description>
+	<name>Spring 3 MVC and JSR303 @Valid example</name>
+	<description>Using Hibernate validator (JSR303 implementation) to validate bean in Spring MVC</description>
 	
 	<properties>
 	</properties>
@@ -21,6 +21,11 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
 		</dependency>
 		
 		<!-- logging, slf4j -->
@@ -40,14 +45,15 @@
 			<artifactId>spring-webmvc</artifactId>
 		</dependency>
 		
+		<!-- Hibernate Validator -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
 		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>FormHandlingAnnotationExample</finalName>
+		<finalName>Spring3MVCAndJSR303ValidExample</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -55,7 +61,7 @@
 				<version>2.2</version>
 
 				<configuration>
-					<path>/FormHandlingAnnotationExample</path>
+					<path>/Spring3MVCAndJSR303ValidExample</path>
 					<update>true</update>
 					<url>http://localhost:8080/manager/text</url>
 					<username>tomcat</username>

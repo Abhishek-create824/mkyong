@@ -27,6 +27,7 @@
 	<modules>
 		<!--Spring MVC Quick Start-->
 		<module>Spring3-MVC-Hello-World-Example</module>
+		<module>Spring3-REST-Hello-World-Example</module>
 	</modules>
 	
 	<dependencies>	

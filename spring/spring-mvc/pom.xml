@@ -48,6 +48,7 @@
 		<module>Configure-Multiple-View-Resolvers-Priority</module-->
 		<!--Form Handling-->
 		<module>Form-Handling-XML-Example</module>
+		<module>Form-Handling-Annotation-Example</module>
 	</modules>
 	
 	<dependencies>	

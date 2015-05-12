@@ -72,6 +72,7 @@
 		<module>Spring3-MVC-And-JSR303-Valid-Example</module>
 		<module>Spring3-MVC-And-RSS-Feed-Example</module>
 		<module>Spring3-MVC-And-XML-Example</module>
+		<module>Spring3-MVC-And-JSON-Example</module>
 	</modules>
 	
 	<dependencies>	

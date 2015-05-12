@@ -49,6 +49,9 @@
 		<!--Form Handling-->
 		<module>Form-Handling-XML-Example</module>
 		<module>Form-Handling-Annotation-Example</module>
+		<!--module>Handling-Duplicate-Form-Submission</module>
+		<module>RedirectView-Example</module-->
+		<module>Handling-Multipage-Wizard-Forms</module>
 	</modules>
 	
 	<dependencies>	

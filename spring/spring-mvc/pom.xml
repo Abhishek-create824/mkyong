@@ -76,6 +76,7 @@
 		<module>Spring-MVC-And-Excel-File-Via-AbstractExcelView</module>
 		<module>Spring-MVC-And-Excel-File-Via-AbstractJExcelView</module>
 		<module>Spring-MVC-And-PDF-File-Via-AbstractPdfView</module>
+		<module>Spring-MVC-And-Log4j-Integration-Example</module>
 	</modules>
 	
 	<dependencies>	

@@ -75,6 +75,7 @@
 		<module>Spring3-MVC-And-JSON-Example</module>
 		<module>Spring-MVC-And-Excel-File-Via-AbstractExcelView</module>
 		<module>Spring-MVC-And-Excel-File-Via-AbstractJExcelView</module>
+		<module>Spring-MVC-And-PDF-File-Via-AbstractPdfView</module>
 	</modules>
 	
 	<dependencies>	

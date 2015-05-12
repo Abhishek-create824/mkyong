@@ -71,6 +71,7 @@
 		<!--Integrating Spring MVC with other frameworks-->
 		<module>Spring3-MVC-And-JSR303-Valid-Example</module>
 		<module>Spring3-MVC-And-RSS-Feed-Example</module>
+		<module>Spring3-MVC-And-XML-Example</module>
 	</modules>
 	
 	<dependencies>	

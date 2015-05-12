@@ -73,6 +73,7 @@
 		<module>Spring3-MVC-And-RSS-Feed-Example</module>
 		<module>Spring3-MVC-And-XML-Example</module>
 		<module>Spring3-MVC-And-JSON-Example</module>
+		<module>Spring-MVC-And-Excel-File-Via-AbstractExcelView</module>
 	</modules>
 	
 	<dependencies>	

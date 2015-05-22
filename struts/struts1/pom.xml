@@ -52,6 +52,42 @@
 		<!--module>ForwardAction-Example</module-->
 		<!--module>DispatchAction-Example</module-->
 		<module>MappingDispatchAction-Example</module>
+		<module>DynaActionForm-example</module>
+		<!--Struts Web Form Components-->
+		<!--module>TextBox-example</module-->
+		<!--module>Hidden-value-example</module-->
+		<!--module>Radio-option-example</module-->
+		<!--module>Drop-down-box-example</module-->
+		<!--module>Check-box-example</module-->
+		<!--module>File-upload-example</module-->
+		<!--module>TextArea-example</module-->
+		<!--module>Rewrite-example</module-->
+		<!--Struts Logic Tags-->
+		<!--module>logic_iterate-example<module-->
+		<!--module>logic_empty-logic_notEmpty-example<module-->
+		<!--module>logic_equal-logic_notEqual-example<module-->
+		<!--module>logic_greaterThan-logic_greaterEqual-logic_lessThan-logic_lessEqual-example<module-->
+		<!--module>logic_match-logic_notMatch-example<module-->
+		<!--module>logic_messagesPresent-logic_messagesNotPresent-example<module-->
+		<!--module>logic_present-logic_notPresent-example<module-->
+		<!--Struts Error and Logging-->
+		<!--module>global_exception-custom-exception-handler<module-->
+		<!--module>Struts-Log4j-integration<module-->
+		<!--module>Handle-404-error-in-Struts<module-->
+		<!--Struts localization-->
+		<!--module>Struts-internationalizing-or-localization example</module-->
+		<!--Struts Validator Framework-->
+		<!--module>Struts-validator-example</module-->
+		<!--Struts Tiles Framework-->
+		<!--module>Struts-Tiles-framework-example</module-->
+		<!--Struts Integrate with Other Frameworks-->
+		<!--module>Struts-Spring-integration</module-->
+		<!--module>Struts-Hibernate-integration</module-->
+		<!--module>Struts-Spring-Hibernate-integration</module-->
+		<!--module>Struts-Quartz-scheduler-integration</module-->
+		<!--module>Struts-Spring-Quartz-scheduler-integration</module-->
+		<!--Struts Misc-->
+		<!--module>Download-file-from-website-example</module-->
 	</modules>
 	
 	<dependencies>	

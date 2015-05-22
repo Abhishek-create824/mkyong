@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>br.com.cams7.teste.mykong.struts</groupId>
+		<artifactId>struts1</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>MappingDispatchAction-Example</artifactId>
+	<packaging>war</packaging>
+
+	<name>MappingDispatchAction Example</name>
+	<description>Same with DispatchAction, group similar functionality into a single action class but with different mechanism</description>
+	
+	<properties>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+		</dependency>	
+		 
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-core</artifactId>
+		</dependency> 
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-taglib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts-extras</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>MappingDispatchActionExample</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+
+				<configuration>
+					<path>/MappingDispatchActionExample</path>
+					<update>true</update>
+					<url>http://localhost:8080/manager/text</url>
+					<username>tomcat</username>
+					<password>tomcat</password>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -41,6 +41,7 @@
 		<module>mongodb</module>
 		<module>spring</module>
 		<module>quartz-scheduler</module>
+		<module>struts</module>
 	</modules>
 
 	<dependencyManagement>

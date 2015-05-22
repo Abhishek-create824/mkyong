@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>br.com.cams7.teste.mykong</groupId>
+		<artifactId>struts</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>br.com.cams7.teste.mykong.struts</groupId>
+	<artifactId>struts1</artifactId>
+	
+	<packaging>pom</packaging>
+	
+	<name>Struts1 Tutorial</name>
+	<description>Exemplos Struts1: http://www.mkyong.com/tutorials/struts-tutorials/</description>
+	
+	<properties>
+		<struts.version>1.3.10</struts.version>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>	
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts-core</artifactId>
+				<version>${struts.version}</version>
+			</dependency>	 
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts-taglib</artifactId>
+				<version>${struts.version}</version>
+			</dependency>			
+			<dependency>
+				<groupId>org.apache.struts</groupId>
+				<artifactId>struts-extras</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<modules>
+		<!--Struts Quick Start-->
+		<module>Struts-hello-world-example</module>
+		<!--Struts Configuration-->
+		<!--module>Configure-the-Struts-Tag-Libraries</module-->
+		<!--module>Configure-a-welcome-page-in-Struts</module-->
+		<!--module>Multiple-Struts-configuration-files</module-->
+		<!--module>Struts-configuration-files-in-wildcards-support</module-->
+		<!--Struts Action & ActionForm-->
+		<!--module>ForwardAction-Example</module-->
+		<!--module>DispatchAction-Example</module-->
+		<module>MappingDispatchAction-Example</module>
+	</modules>
+	
+	<dependencies>	
+	</dependencies>	
+</project>

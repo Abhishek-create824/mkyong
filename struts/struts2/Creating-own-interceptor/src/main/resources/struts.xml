@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts> 
+	<!--constant name="struts.devMode" value="true" /-->
+	<constant name="struts.action.extension" value="html"/>
+	<constant name="struts.custom.i18n.resources" value="global" />
+		
+	<package name="default" namespace="/" extends="struts-default">		
+		<interceptors>		
+			<interceptor name="printMsgInterceptor" class="com.mkyong.common.interceptor.PrintMsgInterceptor"/>
+        	
+        	<interceptor-stack name="newStack">
+           		<interceptor-ref name="printMsgInterceptor"/>
+				<interceptor-ref name="defaultStack" />
+        	</interceptor-stack>
+    	</interceptors>
+		
+		<action name="helloAction" class="com.mkyong.common.action.HelloAction" >
+			<interceptor-ref name="newStack"/>
+			<result name="success">pages/hello.jsp</result>
+		</action>			
+	</package>
+</struts>

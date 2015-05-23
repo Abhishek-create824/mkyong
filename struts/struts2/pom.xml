@@ -33,6 +33,19 @@
 				<artifactId>struts2-convention-plugin</artifactId>
 				<version>${struts.version}</version>
 			</dependency>
+			<!-- Struts 2 Dojo Ajax Tags -->
+			<dependency>
+			  <groupId>org.apache.struts</groupId>
+			  <artifactId>struts2-dojo-plugin</artifactId>
+			  <version>${struts.version}</version>
+			</dependency>
+
+			<!-- Struts 2 JSON Plugins -->
+			<dependency>
+			  <groupId>org.apache.struts</groupId>
+			  <artifactId>struts2-json-plugin</artifactId>
+			  <version>${struts.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
@@ -50,6 +63,11 @@
 		<module>Working-with-Struts2-actions</module>
 		<!--module>Struts2-ActionError-ActionMessage-Example</module-->
 		<module>Struts2-ModelDriven-example</module>
+		<!--Struts 2 Interceptors-->
+		<!--module>Mapping-interceptors-to-action</module-->
+		<!--module>Override-the-interceptor-parameters</module-->
+		<!--module>Interceptor-stack-example</module-->
+		<module>Creating-own-interceptor</module>
 	</modules>
 	
 	<dependencies>	

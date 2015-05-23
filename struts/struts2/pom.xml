@@ -48,6 +48,8 @@
 		<!--module>How-to-remove-the-action-suffix-extension-in-Struts2</module-->
 		<!--Struts 2 Action & Form-->
 		<module>Working-with-Struts2-actions</module>
+		<!--module>Struts2-ActionError-ActionMessage-Example</module-->
+		<module>Struts2-ModelDriven-example</module>
 	</modules>
 	
 	<dependencies>	

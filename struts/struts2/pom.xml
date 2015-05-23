@@ -40,6 +40,9 @@
 		<!--Struts 2 Quick Start-->
 		<module>Struts2-hello-world-XML-version</module>		
 		<module>Struts2-Hello-World-Annotation-version</module>	
+		<!--module>ResultPath-annotation-example</module-->
+		<!--Struts 2 Configurations-->
+		<module>Multiple-Struts-configuration-files-example</module>
 	</modules>
 	
 	<dependencies>	

@@ -18,6 +18,7 @@
 	
 	<properties>
 		<struts.version>2.3.24</struts.version>
+		<!--struts.version>2.1.8</struts.version-->
 	</properties>
 	
 	<dependencyManagement>
@@ -26,13 +27,19 @@
 				<groupId>org.apache.struts</groupId>
 				<artifactId>struts2-core</artifactId>
 				<version>${struts.version}</version>
-			</dependency>						
+			</dependency>
+			<dependency>
+				 <groupId>org.apache.struts</groupId>
+				<artifactId>struts2-convention-plugin</artifactId>
+				<version>${struts.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
 	<modules>
 		<!--Struts 2 Quick Start-->
 		<module>Struts2-hello-world-XML-version</module>		
+		<module>Struts2-Hello-World-Annotation-version</module>	
 	</modules>
 	
 	<dependencies>	

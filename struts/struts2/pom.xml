@@ -43,6 +43,7 @@
 		<!--module>ResultPath-annotation-example</module-->
 		<!--Struts 2 Configurations-->
 		<module>Multiple-Struts-configuration-files-example</module>
+		<module>Namespace-configuration-example-and-explanation</module>
 	</modules>
 	
 	<dependencies>	

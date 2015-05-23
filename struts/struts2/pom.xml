@@ -45,6 +45,9 @@
 		<module>Multiple-Struts-configuration-files-example</module>
 		<module>Namespace-configuration-example-and-explanation</module>
 		<!--module>Struts2-Development-mode</module-->
+		<!--module>How-to-remove-the-action-suffix-extension-in-Struts2</module-->
+		<!--Struts 2 Action & Form-->
+		<module>Working-with-Struts2-actions</module>
 	</modules>
 	
 	<dependencies>	

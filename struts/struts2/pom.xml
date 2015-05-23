@@ -46,6 +46,20 @@
 			  <artifactId>struts2-json-plugin</artifactId>
 			  <version>${struts.version}</version>
 			</dependency>
+			
+			<!-- Quartz framework -->
+			<dependency>
+				<groupId>opensymphony</groupId>
+				<artifactId>quartz</artifactId>
+				<version>1.6.3</version>
+			</dependency>
+			 
+			<!-- Quartz dependency library-->
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
@@ -68,6 +82,7 @@
 		<!--module>Override-the-interceptor-parameters</module-->
 		<!--module>Interceptor-stack-example</module-->
 		<module>Creating-own-interceptor</module>
+		<module>execAndWait-interceptor-example</module>
 	</modules>
 	
 	<dependencies>	

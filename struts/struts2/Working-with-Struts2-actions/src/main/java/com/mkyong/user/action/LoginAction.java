@@ -28,13 +28,12 @@ public class LoginAction extends ActionSupport{
 		return SUCCESS; 
 	}
  
-        //simple validation
-	public void validate(){
-		if("".equals(getUsername())){
-			addFieldError("username", getText("username.required"));
-		}
-		if("".equals(getPassword())){
-			addFieldError("password", getText("password.required"));
-		}
+    //simple validation
+	public void validate(){		
+		if("mkyong".equals(getUsername())){
+			addActionMessage(getText("valid.user"));
+		}else{
+			addActionError(getText("invalid.user"));
+		}		
 	}
 }

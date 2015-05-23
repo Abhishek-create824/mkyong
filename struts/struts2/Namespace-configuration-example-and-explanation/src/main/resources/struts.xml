@@ -4,6 +4,9 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
  
 <struts> 
+	<!--constant name="struts.devMode" value="true" /-->
+	<constant name="struts.action.extension" value="html"/>
+	
 	<package name="default" namespace="/" extends="struts-default">
 		<action name="SayWelcome">
 			<result>pages/welcome.jsp</result>

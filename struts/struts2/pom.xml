@@ -44,6 +44,7 @@
 		<!--Struts 2 Configurations-->
 		<module>Multiple-Struts-configuration-files-example</module>
 		<module>Namespace-configuration-example-and-explanation</module>
+		<!--module>Struts2-Development-mode</module-->
 	</modules>
 	
 	<dependencies>	
